@@ -1,7 +1,7 @@
 FROM openjdk:11-jre
 LABEL maintainer="BCP-BOOTCAMP"
-COPY build/libs/bootcamp-shopvintage-bidders-*SNAPSHOT.jar /opt/bootcamp-shopvintage-bidders.jar
-ENTRYPOINT ["java", "-Djava.file.encoding=UTF-8","-jar","/opt/bootcamp-shopvintage-bidders.jar"]
+COPY build/libs/bidders-*SNAPSHOT.jar /opt/bidders.jar
+ENTRYPOINT ["java", "-Djava.file.encoding=UTF-8","-jar","/opt/bidders.jar"]
 
 #MULTISTAGE
 #Compilar, ejecutar test y Crear artefacto JAR
